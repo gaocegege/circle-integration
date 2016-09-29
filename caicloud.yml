@@ -1,11 +1,10 @@
 integration:
   services:
-    mongo:
-      image: localhost:5000/mongo:3.0.5
-      command: mongod --smallfiles
+    mlrt:
+      image: localhost:5000/minimal-long-running-task:latest
   image: localhost:5000/alice/test-basic-rest-version:v0.1.0
   commands:
-    - ping -c 10 mongo
+    - ping -c 10 mlrt
 
 pre_build:
   image: localhost:5000/alice/test-basic-rest-version:v0.1.0
