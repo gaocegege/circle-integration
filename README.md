@@ -1,5 +1,3 @@
 # Integration
 
-一个用来测试持续集成的项目
-
-# UNMAINTAINED
+A project to test features in circle.
